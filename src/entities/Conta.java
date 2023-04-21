@@ -4,9 +4,9 @@ public class Conta {
     private int agencia;
     private int numero;
     private double saldo;
-    private String titular;
+    private Cliente titular;
 
-    public Conta(int agencia, int numero, String titular) {
+    public Conta(int agencia, int numero, Cliente titular) {
         this.agencia = agencia;
         this.numero = numero;
         this.titular = titular;
@@ -33,7 +33,7 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public void setTitular(String titular) {
+    public void setTitular(Cliente titular) {
         this.titular = titular;
     }
 
@@ -49,7 +49,7 @@ public class Conta {
         return saldo;
     }
 
-    public String getTitular() {
+    public Cliente getTitular() {
         return titular;
     }
 
@@ -75,6 +75,4 @@ public class Conta {
             System.out.println("Saldo insuficiente.");
         }
     }
-
-
 }

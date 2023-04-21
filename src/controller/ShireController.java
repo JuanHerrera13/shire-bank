@@ -58,7 +58,7 @@ public class ShireController {
             int agenciaConta = view.lerAgenciaConta();
             Cliente titularConta = new Cliente();
             titularConta.setNome(view.lerTitularConta());
-            Conta conta = new Conta(agenciaConta, numeroConta, titularConta.getNome());
+            Conta conta = new Conta(agenciaConta, numeroConta, titularConta);
             contas.put(numeroConta, conta);
             view.exibirMensagem("Conta criada com sucesso.");
         }
