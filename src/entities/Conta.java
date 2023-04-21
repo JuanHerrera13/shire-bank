@@ -14,18 +14,10 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
-        if (numero <= 0) {
-            System.out.println("Value can't be less than or equal to zero");
-            return;
-        }
         this.numero = numero;
     }
 
     public void setAgencia(int agencia) {
-        if (agencia <= 0) {
-            System.out.println("Value can't be less than or equal to zero");
-            return;
-        }
         this.agencia = agencia;
     }
 
