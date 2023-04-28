@@ -74,7 +74,6 @@ public class ShireController {
         if (conta != null) {
             double valor = view.lerValor();
             conta.depositar(valor);
-            view.exibirMensagem("Depósito realizado com sucesso.");
         } else {
             view.exibirMensagem("Conta não encontrada. Verifique o número da conta.");
         }

@@ -46,7 +46,12 @@ public class Conta {
     }
 
     public void depositar(double valor) {
-        this.saldo += valor;
+        if (valor > 0) {
+            this.saldo += valor;
+            System.out.println("Depósito realizado com sucesso!");
+        } else {
+            System.out.println("Depósito com quantia igual ou inferior a zero!");
+        }
     }
 
     public void sacar(double valor) {
